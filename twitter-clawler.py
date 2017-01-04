@@ -5,14 +5,11 @@ import time
 from datetime import date, timedelta
 from requests_oauthlib import OAuth1
 
+from local_settings import api_key, api_secret, access_token, access_secret
+
 # from
 #   http://qiita.com/nasa9084/items/40f223b5b44f13ef2925
 #   http://qiita.com/mima_ita/items/ba59a18440790b12d97e
-
-api_key = ""
-api_secret = ""
-access_token = ""
-access_secret = ""
 
 url = "https://api.twitter.com/1.1/search/tweets.json"
 two_weeks_ago = (date.today() - timedelta(days=7)).isoformat()
